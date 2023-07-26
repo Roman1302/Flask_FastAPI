@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>{% block title %} {% endblock %}</title>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="/clothes">Одежда</a></li>
+        <li><a href="/hats">Шапки</a></li>
+        <li><a href="/shoes">Кросовки</a></li>
+    </ul>
+</nav>
+<header>
+    {% block content %} {% endblock %}
+    <p> стоимость: {% block cost %} {% endblock %}&#8381;</p>
+</header>
+
+
+<footer>
+    <p> Наш магазин находится по адресу: ул. Кутузова, д. 5 </p>
+</footer>
+
+</body>
+</html>
